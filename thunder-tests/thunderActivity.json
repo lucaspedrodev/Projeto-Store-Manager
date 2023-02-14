@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "842fcc33-655d-4b6e-b20b-cde10c982353",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/",
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-14T15:39:47.827Z",
+    "modified": "2023-02-14T15:39:47.827Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n  {\n    \"id\": 1,\n    \"name\": \"Martelo de Thor\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Traje de encolhimento\"\n  }\n  /* ... */\n]",
+      "form": []
+    },
+    "tests": []
+  }
+]
