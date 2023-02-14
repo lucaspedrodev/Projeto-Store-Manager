@@ -12,7 +12,14 @@ const productById = async (id) => {
   return product;
 };
 
+const productRegistration = (name) => {
+  const addProducts = productModel.productRegistration(name);
+
+  return addProducts;
+};
+
 module.exports = {
   allProducts,
   productById,
+  productRegistration,
 };
