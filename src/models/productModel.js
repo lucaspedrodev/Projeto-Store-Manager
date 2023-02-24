@@ -1,8 +1,8 @@
 const connection = require('./connection');
 
 const allProducts = async () => {
-  const querys = 'SELECT * FROM StoreManager.products';
-  const [results] = await connection.execute(querys);
+  const query = 'SELECT * FROM StoreManager.products';
+  const [results] = await connection.execute(query);
   return results;
 };
 
@@ -18,8 +18,21 @@ const productRegistration = async (name) => {
   return insertId;
 };
 
+const updateProducts = async (id, name) => {
+  const query = 'UPDATE StoreManager.products SET name = ? WHERE id = ?';
+  const [{ affectedRows }] = await connection.execute(query, [name, id]);
+  return affectedRows;
+};
+
+const deleteProducts = async (id) => {
+  const query = 'DELETE FROM StoreManager.products WHERE id = ?';
+  await connection.execute(query, [id]);
+};
+
 module.exports = {
   allProducts,
   productById,
   productRegistration,
+  updateProducts,
+  deleteProducts,
 };

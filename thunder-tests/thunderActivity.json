@@ -8,14 +8,9 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-14T15:39:47.827Z",
-    "modified": "2023-02-14T15:39:47.827Z",
+    "modified": "2023-02-23T14:36:04.484Z",
     "headers": [],
     "params": [],
-    "body": {
-      "type": "json",
-      "raw": "[\n  {\n    \"id\": 1,\n    \"name\": \"Martelo de Thor\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Traje de encolhimento\"\n  }\n  /* ... */\n]",
-      "form": []
-    },
     "tests": []
   },
   {
@@ -33,6 +28,39 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"name\": \"ProdutoX\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b3099130-1c7a-43a1-b16c-2363262eba4b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/products",
+    "url": "http://localhost:3000/products",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-23T14:36:11.708Z",
+    "modified": "2023-02-23T14:36:11.708Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "cb855abe-3d8c-47ff-b5f4-ee4b1ed1eb8f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/products/1",
+    "url": "http://localhost:3000/products/2",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-02-23T14:38:03.527Z",
+    "modified": "2023-02-24T14:56:20.744Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"lucas\"\n}",
       "form": []
     },
     "tests": []
