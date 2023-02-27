@@ -18,10 +18,10 @@ const productRegistration = async (name) => {
   return addProducts;
 };
 
-const updateProducts = (id, name) => {
-  const productsUpdated = productModel.updateProducts(id, name);
-  if (!productsUpdated) return { message: 'Product not found' };
-  return productsUpdated;
+const updateProducts = (id, name) => { // 2 parametros
+  const productsUpdated = productModel.updateProducts(id, name); // camada externa = mock
+  if (!productsUpdated) return { message: 'Product not found' }; // 1 retorno
+    return productsUpdated; // 2 retorno
 };
 
 const deleteProducts = async (id) => {
