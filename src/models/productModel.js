@@ -20,8 +20,8 @@ const productRegistration = async (name) => {
 
 const updateProducts = async (id, name) => {
   const query = 'UPDATE StoreManager.products SET name = ? WHERE id = ?';
-  const [{ affectedRows }] = await connection.execute(query, [name, id]);
-  return affectedRows;
+  const [{ updateRows }] = await connection.execute(query, [name, id]);
+  return updateRows;
 };
 
 const deleteProducts = async (id) => {
