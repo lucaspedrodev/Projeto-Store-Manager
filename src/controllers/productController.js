@@ -16,8 +16,8 @@ const productById = async (req, res) => {
 
 const productRegistration = async (req, res) => {
   const name = req.body;
-  const product = await productServices.productRegistration(name);
-  const newProducts = { id: product, ...name };
+  const idProduct = await productServices.productRegistration(name);
+  const newProducts = { id: idProduct, ...name };
 
   return res.status(201).json(newProducts);
 };
