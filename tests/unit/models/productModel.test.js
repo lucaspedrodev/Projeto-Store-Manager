@@ -59,7 +59,7 @@ describe('Testa productsModel', () => {
       //arrange
       const id = 1;
       const name = productsMock.productUpdate.name;
-      sinon.stub(connection, 'execute').resolves([{ updateRows: 1 }]);
+      sinon.stub(connection, 'execute').resolves([{ affectedRows: 1 }]);
       //act 
       const result = await productsModel.updateProducts(id, name);
       //assert
