@@ -17,6 +17,7 @@ const getSalesById = async (req, res) => {
   return res.status(200).json(message);
 };
 
+// teste avaliador github
 module.exports = {
   getSalesById,
   getAllSales,
